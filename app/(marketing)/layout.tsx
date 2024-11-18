@@ -1,4 +1,4 @@
-import Footer from "./faq/footer";
+import Footer from "./footer";
 import Header from "./header";
 
 type Props = {
