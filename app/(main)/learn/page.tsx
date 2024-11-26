@@ -17,14 +17,7 @@ const LearnPage = () => {
       </StickyWrapper>
       <FeedWrapper>
         <Header title="Spanish" />
-        <div className="space-y-4">
-          <div className="h-[700px] bg-blue-500"></div>
-          <div className="h-[700px] bg-blue-500"></div>
-          <div className="h-[700px] bg-blue-500"></div>
-          <div className="h-[700px] bg-blue-500"></div>
-          <div className="h-[700px] bg-blue-500"></div>
-          <div className="h-[700px] bg-blue-500"></div>
-        </div>
+        <div className="space-y-4"></div>
       </FeedWrapper>
     </div>
   );
