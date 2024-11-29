@@ -110,7 +110,7 @@ export const challengeProgress = pgTable("challenge_progress", {
       onDelete: "cascade",
     })
     .notNull(),
-  complete: boolean("complete").notNull().default(false),
+  completed: boolean("completed").notNull().default(false),
 });
 
 export const challengeProgressRelations = relations(
