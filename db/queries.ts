@@ -53,6 +53,9 @@ export const getUnits = cache(async () => {
   // Tái cấu trúc dữ liệu và chỉ lấy thông tin cần thiết
   const normalizedData = data.map((unit) => {
     const lessonsWithCompletedStatus = unit.lessons.map((lesson) => {
+      if (lesson.challenges.length === 0) {
+        return { ...lesson, completed: false };
+      }
       // Kiểm tra trạng thái hoàn thành của tất cả các thử thách trong bài học
       const allCompletedChallenges = lesson.challenges.every((challenge) => {
         return (
