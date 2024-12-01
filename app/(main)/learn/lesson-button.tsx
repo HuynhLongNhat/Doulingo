@@ -24,7 +24,6 @@ const LessonButton = ({
   current,
   percentage,
 }: Props) => {
-  console.log("percentage", percentage);
   const cycleLength = 8;
   const cycleIndex = index % cycleLength;
   let indentationLevel;
